@@ -1,6 +1,6 @@
-# Olá 👋, Seja Bem-Vindo(a) ao nosso projeto prático da diciplina de IDPW
-## Intrododução ao Desenvolvimento de Paginas Web  
-### Um poudo do Projeto  
+# Olá 👋, Seja Bem-Vindo(a) ao nosso projeto prático da disciplina de IDPW
+## Introdução ao Desenvolvimento de Páginas Web  
+### Um pouco do Projeto  
 
 
 
@@ -9,7 +9,7 @@
 ## 🌐 Onde Nos Encontrar
 
 <p align="left">
-  <a href="https://instagram.com/murilolss__">
+  <a href="https://instagram.com/liliane_perim">
     <img src="https://img.shields.io/badge/Instagram-@murilolss__-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
   <a href="https://instagram.com/murilolss__">
