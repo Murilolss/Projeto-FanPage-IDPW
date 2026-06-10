@@ -99,12 +99,9 @@ header {
     margin-bottom: 8px;
     text-decoration: none; 
     color: #fff;            
-    width: auto;
-    height: 50px;
-    border: 2px solid green;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .containerHamburger {
         display: none;
     }
