@@ -1,3 +1,25 @@
+/* Paleta de Cores Geral:
+Preto: ##000000 
+Branco: #FFFFFF
+Dourado Claro: #CVA542
+Dourado Escuro: #BD9637
+Vermelho: #9C031F
+
+Fonte Bebas Neue - Titulos Mais Impactantes 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+Fonte Poppins - Subtítulos e textos menores 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
 body {
     height: 100%;
     margin: 0;
