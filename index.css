@@ -46,6 +46,41 @@ header {
     font-size: 25px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-image: url("./img/teste1.jpg");
+    gap: 20px;
+}
+
+.titleMain{
+    margin-top: 20px;
+}
+
+.containerTitleMain{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid red;
+}
+
+.line{
+  flex: 1;
+  height: 2px;
+  background-color: rgb(204, 204, 204);
+}
+
+.contentMain{
+    height: 250px;
+    border: 2px solid blue;
+}
+
 .footer {
     width: auto;
     height: 150px;
