@@ -126,3 +126,114 @@ svg:hover{
         padding-left: 10px;
     }
 }
+
+/*Pagina Biografia/Linha do Tempo*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    font-family:'Poppins', sans-serif;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#9C031F;
+}
+
+header p{
+    color:#bbb;
+}
+
+.container{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:50px;
+    width:90%;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+.imagem{
+    width:35%;
+    position:sticky;
+    top:20px;
+}
+
+.imagem img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 25px #9C031F;
+}
+
+.timeline{
+    position:relative;
+    width:60%;
+    padding-left:40px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:15px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#9C031F;
+}
+
+.evento{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.evento::before{
+    content:'';
+    position:absolute;
+    left:-33px;
+    top:15px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    border:4px solid #9C031F;
+}
+
+.ano{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#9C031F;
+    margin-bottom:10px;
+}
+
+.conteudo{
+    background:#1d1d1d;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.conteudo:hover{
+    transform:translateX(10px);
+    box-shadow:0 0 15px #9C031F;
+}
+
+.conteudo h3{
+    margin-bottom:8px;
+}
+
+.conteudo p{
+    color:#ccc;
+    line-height:1.6;
+}
