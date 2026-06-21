@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    link
     <title>Document</title>
 </head>
 
@@ -44,6 +43,7 @@
             </div>
         </div>
 
+
         <section class="contentMain">
             <div class="imgContentMain">
                 <img src="./img//filmeLogo.jpg" alt="">
@@ -55,6 +55,15 @@
                 destacando os passos dados por Jackson fora dos palcos. Performances icônicas de sua carreira solo,
                 ainda, compõem esse retrato íntimo e nunca antes visto do artista.</P>
         </section>
+
+        <div class="titleMain">
+            <div class="containerTitleMain">
+                <a class="line"></a>
+                <h2>Biografia</h2>
+                <a class="line"></a>
+            </div>
+        </div>
+
         <section class="contentMain">
             <P>Michael Jackson foi um cantor, compositor e dançarino norte-americano que começou sua carreira ainda
                 criança no grupo The Jackson 5. Mais tarde, iniciou uma carreira solo de enorme sucesso, com álbuns
@@ -69,25 +78,36 @@
                 medicamentos, enquanto se preparava para uma turnê.
             </P>
             <div class="imgContentMain">
-                <img src="./img/michaelBiografia.jpg" alt="" width="300px">
+                <img src="./img/michaelBiografia.jpg" alt="" width="300px" height="auto">
             </div>
         </section>
 
+        <div class="titleMain">
+            <div class="containerTitleMain">
+                <a class="line"></a>
+                <h2>Destaques da Carreira</h2>
+                <a class="line"></a>
+            </div>
+        </div>
+
         <section class="contentMain">
             <div class="containerDisc">
-                <div class="disc" onmouseover="playAudio(1)" onmouseout="pauseAudio(1)">
+                <div class="disc" onmouseover="playAudio1(1)" onmouseout="pauseAudio(1)">
                     <audio id="audio1" src="/music/thriller.mp3"></audio>
                 </div>
-                
-            <div class="disc" onmouseover="playAudio(2)" onmouseout="pauseAudio(2)">
-                <audio id="audio2" src="/music/billieJean.mp3"></audio>
+
+                <div class="disc" onmouseover="playAudio2(2)" onmouseout="pauseAudio(2)">
+                    <audio id="audio2" src="/music/billieJean.mp3"></audio>
+                </div>
+
+
+                <div class="disc" onmouseover="playAudio3(3)" onmouseout="pauseAudio(3)">
+                    <audio id="audio3" src="/music/beatIt.mp3"></audio>
+                </div>
+
             </div>
-            
-            <div class="disc" onmouseover="playAudio(3)" onmouseout="pauseAudio(3)">
-                <audio id="audio3" src="/music/beatIt.mp3"></audio>
+
             </div>
-            
-        </div>
         </section>
     </main>
 
@@ -124,7 +144,7 @@
         </div>
         </footer>
 
-         <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
