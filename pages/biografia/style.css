@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 body {
     height: 100%;
+    background:#111;
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family:'Poppins', sans-serif;
 }
 
 header {
@@ -18,6 +22,12 @@ header {
 .logoHeader {
     width: 90px;
     height: 90px;
+    transition:0.3s;
+}
+
+.logoHeader:hover{
+    cursor: pointer;
+    transform:translateX(10px);
 }
 
 .containerHeader {
@@ -39,120 +49,22 @@ header {
     padding: 10px;
 }
 
+.nav-menu a{
+    color: #C9A542;
+    text-decoration: none;
+    transition:0.3s;
+    display: inline-block;
+}
+.nav-menu a:hover{
+    cursor: pointer;
+    transform:translateX(3px);
+}
+
 .containerHamburger {
     cursor: pointer;
     background: none;
     border: none;
     font-size: 25px;
-}
-
-.footer {
-    width: auto;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: black;
-    border: 2px solid red;
-}
-
-.contentFooter{
-    width: 280px;
-    height: 130px;
-    border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.contentFooterptUp {
-    width: auto;
-    height: 50px;
-    border: 2px solid purple;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    gap: 25px;
-}
-svg{
-    width: 30px;
-    height: 30px;
-    color: white;
-}
-
-svg:hover{
-    cursor: pointer;
-    transform: translateY(-3px);
-}
-
-.contentFooterptDown {
-    text-align: center;
-    width: auto;
-    height: auto;
-    border: 2px solid green;
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
-}
-
-.contentFooterptDown ul{
-    width: auto;
-    display: flex;
-    list-style: none;
-    padding: 7px;
-    margin: 0;
-    gap: 20px;  
-}
-
-.contentFooterptDown li{
-    margin-bottom: 8px;
-    text-decoration: none; 
-    color: #fff;            
-}
-
-@media screen and (min-width: 768px) {
-    .containerHamburger {
-        display: none;
-    }
-
-    .nav-menu {
-        display: block;
-    }
-
-    .nav-menu li {
-        display: inline;
-        padding-left: 10px;
-    }
-}
-
-/*Pagina Biografia/Linha do Tempo*/
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:#111;
-    color:white;
-    font-family:'Poppins', sans-serif;
-}
-
-header{
-    text-align:center;
-    padding:40px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    color:#9C031F;
-}
-
-header p{
-    color:#bbb;
 }
 
 .container{
@@ -162,7 +74,12 @@ header p{
     gap:50px;
     width:90%;
     margin:auto;
+    padding-top:50px;
     padding-bottom:50px;
+}
+
+h3{
+    color: white;
 }
 
 .imagem{
@@ -237,3 +154,94 @@ header p{
     color:#ccc;
     line-height:1.6;
 }
+
+.footer {
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: black;
+}
+
+.contentFooter{
+    width: 280px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentFooterptUp {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 25px;
+}
+svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+svg:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.contentFooterptDown {
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.contentFooterptDown ul{
+    width: auto;
+    display: flex;
+    list-style: none;
+    padding: 7px;
+    margin: 0;
+    gap: 20px;  
+}
+
+.contentFooterptDown li{
+    margin-bottom: 8px;
+    text-decoration: none; 
+    color: #fff;            
+}
+
+@media screen and (min-width: 768px) {
+    .containerHamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: inline;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background: #111;
 }
 
 header {
@@ -18,6 +19,12 @@ header {
 .logoHeader {
     width: 90px;
     height: 90px;
+    transition:0.3s;
+}
+
+.logoHeader:hover{
+    cursor: pointer;
+    transform:translateX(10px);
 }
 
 .containerHeader {
@@ -39,11 +46,85 @@ header {
     padding: 10px;
 }
 
+.nav-menu a{
+    color: #C9A542;
+    text-decoration: none;
+    transition:0.3s;
+    display: inline-block;
+}
+.nav-menu a:hover{
+    cursor: pointer;
+    transform:translateX(3px);
+}
+
 .containerHamburger {
     cursor: pointer;
     background: none;
     border: none;
     font-size: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contentInfluency{
+    min-height: 300px;
+    padding: 20px;
+    border:4px solid #9C031F;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.contentInfluency:hover{
+    transform:translateX(10px);
+    box-shadow:0 0 15px #9C031F;
+}
+
+.contentInfluency h2{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #b3002d;
+    padding-left: 15px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.titleInfluency{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.containerTitleInfluency{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.line{
+  flex: 1;
+  height: 2px;
+  background-color: rgb(204, 204, 204);
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color:#ffffff;
 }
 
 .footer {
@@ -54,13 +135,11 @@ header {
     align-items: center;
     padding: 10px;
     background: black;
-    border: 2px solid red;
 }
 
 .contentFooter{
     width: 280px;
     height: 130px;
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +148,6 @@ header {
 .contentFooterptUp {
     width: auto;
     height: 50px;
-    border: 2px solid purple;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,7 +169,6 @@ svg:hover{
     text-align: center;
     width: auto;
     height: auto;
-    border: 2px solid green;
     display: flex;
     justify-content: center;  
     align-items: center; 
@@ -125,86 +202,4 @@ svg:hover{
         display: inline;
         padding-left: 10px;
     }
-}
-
-/*Pagina Destaques da Carreira*/
-
-
-body{
-    background-color: #050505;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    gap: 20px;
-    padding: 20px;
-}
-
-.contentInfluency p{
-    font-family: "Poppins", sans-serif;
-    font-size: 22px;
-    color: #d6d6d6;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-
-.containerHeader {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.titleInfluency{
-    width: 100%;
-    margin-top: 20px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 28px;
-}
-
-.containerInfluency{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: white;
-}
-
-.line{
-  flex: 1;
-  height: 2px;
-  background-color: rgb(204, 204, 204);
-}
-
-.contentInfluency{
-    min-height: 300px;
-    padding: 25px 35px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    margin: 30px 20px;
-    background-color: #0f0f0f;
-    border: 2px solid #b3002d;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(179,0,45,0.4);
-    transition:0.3s;
-}
-
-.contentInfluency:hover{
-    transform:translateX(10px);
-    box-shadow:0 0 15px #9C031F;
-}
-
-.contentInfluency h2{
-    color: white;
-    font-size: 32px;
-    margin-bottom: 20px;
-
-    border-left: 5px solid #b3002d;
-    padding-left: 15px;
 }

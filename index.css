@@ -43,6 +43,12 @@ header {
 .logoHeader {
     width: 90px;
     height: 90px;
+    transition:0.3s;
+}
+
+.logoHeader:hover{
+    cursor: pointer;
+    transform:translateX(10px);
 }
 
 .containerHeader {
@@ -51,7 +57,13 @@ header {
 }
 
 .nav-menu {
+    font-family: "Poppins", sans-serif;
     display: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 10px;
 }
 
 .nav-menu.active {
@@ -59,9 +71,15 @@ header {
     background-color: lightgray;
 }
 
-.nav-menu ul {
-    list-style: none;
-    padding: 10px;
+.nav-menu a{
+    color: #C9A542;
+    text-decoration: none;
+    transition:0.3s;
+    display: inline-block;
+}
+.nav-menu a:hover{
+    cursor: pointer;
+    transform:translateX(3px);
 }
 
 .containerHamburger {
@@ -72,13 +90,15 @@ header {
 }
 
 main{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 300px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    gap: 20px;
-    padding: 20px;
+    gap: 60px;
+    border-radius:10px;
+    transition:0.3s;
 }
 
 p{
@@ -107,9 +127,9 @@ h3{
 }
 
 .line{
-  flex: 1;
-  height: 2px;
-  background-color: rgb(204, 204, 204);
+    flex: 1;
+    height: 2px;
+    background-color: rgb(204, 204, 204);
 }
 
 .contentMain{
@@ -118,6 +138,7 @@ h3{
     border:4px solid #9C031F;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 60px;
     border-radius:10px;
     transition:0.3s;
@@ -133,11 +154,45 @@ h3{
     height: 100%;
 }
 
+.avalicao {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.avalicao li {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #f5c518; /* Cor estilo IMDb */
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.avalicao li:hover {
+    transform: translateX(10px);
+}
+
+.avalicao strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f5c518;
+}
+
 .containerDisc {
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-top: 100px;
+}
+
+.cardDisc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .disc {
@@ -145,7 +200,7 @@ h3{
   height: 120px;
   border-radius: 50%;
   background: radial-gradient(circle, #222 30%, #000 70%);
-  animation: spin 6s linear infinite;
+  animation: spin 8s linear infinite;
   display: flex;
   align-items: center;
   justify-content: center;

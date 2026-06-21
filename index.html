@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -13,7 +13,9 @@
     <header>
         <!-- Logo da página -->
         <div class="logoHeader">
-            <img src="img/mjLogo.png" alt="" width="150" height="auto">
+            <a href="/index.html">
+                <img src="img/mjLogo.png" alt="" width="150" height="auto">
+            </a>
         </div>
 
         <div class="containerHeader">
@@ -27,7 +29,7 @@
                 <ul>
                     <li><a href="/pages/biografia/index.html">Biografia</a></li>
                     <li><a href="/pages/destaques/index.html">Destaques da Carreira</a></li>
-                    <li><a href="/pages/influencia/index.html">Influencia Pop</a></li>
+                    <li><a href="/pages/influencia/index.html">Influência Pop</a></li>
                 </ul>
             </nav>
 
@@ -59,12 +61,54 @@
         <div class="titleMain">
             <div class="containerTitleMain">
                 <a class="line"></a>
+                <h2>Avaliações</h2>
+                <a class="line"></a>
+            </div>
+        </div>
+
+
+        <section class="contentMain">
+                <ul class="avalicao">
+                    <li>
+                        <strong>IMDb</strong><br>
+                        ⭐ 7.5/10
+                    </li>
+                    <li>
+                        <strong>Rotten Tomatoes</strong><br>
+                         ⭐ 38%
+                    </li>
+                    <li>
+                        <strong>Metacritic</strong><br>
+                        ⭐ 39/100
+                    </li>
+                    <li>
+                        <strong>Letterboxd</strong><br>
+                        ⭐ 3.6/5
+                    </li>
+                    <li>
+                        <strong>Filmow</strong><br>
+                        ⭐ 3.8/5
+                    </li>
+                </ul>
+
+                
+                <div class="imgContentMain">
+                    <img src="./img/avaliacao.jpg" alt="" width="330">
+                </div>
+        </section>
+
+        <div class="titleMain">
+            <div class="containerTitleMain">
+                <a class="line"></a>
                 <h2>Biografia</h2>
                 <a class="line"></a>
             </div>
         </div>
 
         <section class="contentMain">
+            <div class="imgContentMain">
+                <img src="./img/michaelBiografia.jpg" alt="" width="300px" height="auto">
+            </div>
             <P>Michael Jackson foi um cantor, compositor e dançarino norte-americano que começou sua carreira ainda
                 criança no grupo The Jackson 5. Mais tarde, iniciou uma carreira solo de enorme sucesso, com álbuns
                 marcantes como Off the Wall, Thriller, Bad e Dangerous. O álbum Thriller se tornou o mais vendido da
@@ -77,9 +121,6 @@
                 morreu em 25 de junho de 2009, em Los Angeles, devido a uma parada cardíaca causada por overdose de
                 medicamentos, enquanto se preparava para uma turnê.
             </P>
-            <div class="imgContentMain">
-                <img src="./img/michaelBiografia.jpg" alt="" width="300px" height="auto">
-            </div>
         </section>
 
         <div class="titleMain">
@@ -90,19 +131,28 @@
             </div>
         </div>
 
-        <section class="contentMain">
+        <section>
             <div class="containerDisc">
-                <div class="disc" onmouseover="playAudio1(1)" onmouseout="pauseAudio(1)">
-                    <audio id="audio1" src="/music/thriller.mp3"></audio>
+
+                <div class="cardDis">
+                    <div class="disc" onmouseover="playAudio1(1)" onmouseout="pauseAudio(1)">
+                        <audio id="audio1" src="/music/thriller.mp3"></audio>
+                    </div>
+                    <p>Thriller (1982)</p>
                 </div>
 
-                <div class="disc" onmouseover="playAudio2(2)" onmouseout="pauseAudio(2)">
-                    <audio id="audio2" src="/music/billieJean.mp3"></audio>
+                <div class="cardDisc">
+                    <div class="disc" onmouseover="playAudio2(2)" onmouseout="pauseAudio(2)">
+                        <audio id="audio2" src="/music/billieJean.mp3"></audio>
+                    </div>
+                    <p>Billie Jean (1982)</p>
                 </div>
 
-
-                <div class="disc" onmouseover="playAudio3(3)" onmouseout="pauseAudio(3)">
-                    <audio id="audio3" src="/music/beatIt.mp3"></audio>
+                <div class="cardDis">
+                    <div class="disc" onmouseover="playAudio3(3)" onmouseout="pauseAudio(3)">
+                        <audio id="audio3" src="/music/beatIt.mp3"></audio>
+                    </div>
+                    <p>Beat It(1982)</p>
                 </div>
 
             </div>
