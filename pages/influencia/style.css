@@ -129,10 +129,29 @@ svg:hover{
 
 /*Pagina Destaques da Carreira*/
 
-p{
+
+body{
+    background-color: #050505;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contentInfluency p{
     font-family: "Poppins", sans-serif;
     font-size: 22px;
+    color: #d6d6d6;
+    line-height: 1.8;
+    text-align: justify;
 }
+
 
 .containerHeader {
     display: flex;
@@ -140,19 +159,19 @@ p{
 }
 
 .titleInfluency{
-    padding: 20px;
-    display:flex;
-    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
 }
 
-.containerTitleInfluency{
-    width: 400px;
+.containerInfluency{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 2px solid red;
+    color: white;
 }
 
 .line{
@@ -163,19 +182,29 @@ p{
 
 .contentInfluency{
     min-height: 300px;
-    padding: 20px;
-    border: 2px solid blue;
+    padding: 25px 35px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 60px;
-    margin-bottom: 20px;
-
+    margin: 30px 20px;
+    background-color: #0f0f0f;
+    border: 2px solid #b3002d;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(179,0,45,0.4);
+    transition:0.3s;
 }
 
-.h2{
-    display:flex;
-    justify-content: center;
-    color:black;
-    font-size: 18px;
-    padding: 15px;
+.contentInfluency:hover{
+    transform:translateX(10px);
+    box-shadow:0 0 15px #9C031F;
+}
+
+.contentInfluency h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    border-left: 5px solid #b3002d;
+    padding-left: 15px;
 }
