@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* Paleta de Cores Geral:
 Preto: ##000000 
 Branco: #FFFFFF
@@ -74,8 +76,14 @@ main{
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-image: url("./img/teste1.jpg");
+    /* background-image: url("./img/teste1.jpg"); */
     gap: 20px;
+    padding: 20px;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
 }
 
 .titleMain{
@@ -99,9 +107,45 @@ main{
 }
 
 .contentMain{
-    height: 250px;
+    min-height: 300px;
+    padding: 20px;
     border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
 }
+
+.imgContentMain{
+    width: 350px;
+    height: 100%;
+}
+
+.containerDisc {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.disc {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #222 30%, #000 70%);
+  animation: spin 6s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-image: url("/img/thriller.jpg");
+}
+
+.disc:hover {
+  transform: scale(1.15);
+}
+
 
 .footer {
     width: auto;
@@ -182,4 +226,9 @@ svg:hover{
         display: inline;
         padding-left: 10px;
     }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

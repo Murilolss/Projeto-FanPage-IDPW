@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    link
     <title>Document</title>
 </head>
 
@@ -37,23 +38,56 @@
     <main>
         <div class="titleMain">
             <div class="containerTitleMain">
-                <a class="line"></a> 
+                <a class="line"></a>
                 <h2>O Filme do Rei do Pop</h2>
-                <a class="line"></a> 
+                <a class="line"></a>
             </div>
         </div>
 
         <section class="contentMain">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet soluta tempora voluptatum quos veritatis vitae ullam asperiores, quidem quasi eum, cum labore doloremque cumque quas culpa ut iusto a neque!</p>
+            <div class="imgContentMain">
+                <img src="./img//filmeLogo.jpg" alt="">
+            </div>
+            <P>Michael é uma cinebiografia musical sobre o rei do pop Michael Jackson. O longa retrata a vida e o legado
+                do cantor (Jaafar Jackson), desde a descoberta de seu espetacular talento como líder do Jackson Five até
+                o impacto cultural de sua visão artística ímpar. Para além da música, este drama biográfico traça as
+                ambições criativas de um homem que buscou ativamente se tornar um dos maiores artistas do mundo,
+                destacando os passos dados por Jackson fora dos palcos. Performances icônicas de sua carreira solo,
+                ainda, compõem esse retrato íntimo e nunca antes visto do artista.</P>
+        </section>
+        <section class="contentMain">
+            <P>Michael Jackson foi um cantor, compositor e dançarino norte-americano que começou sua carreira ainda
+                criança no grupo The Jackson 5. Mais tarde, iniciou uma carreira solo de enorme sucesso, com álbuns
+                marcantes como Off the Wall, Thriller, Bad e Dangerous. O álbum Thriller se tornou o mais vendido da
+                história da música, e Michael ficou conhecido mundialmente por sua inovação nos videoclipes,
+                performances e pelo passo de dança “moonwalk”.
+                <br />
+                Além da carreira musical, ele ficou famoso por sua vida pessoal e polêmicas, incluindo a criação do
+                rancho Neverland Ranch e acusações de abuso infantil, das quais foi absolvido em 2005. Michael Jackson
+                teve três filhos e continuou lançando trabalhos ao longo dos anos, mesmo com queda nas vendas. Ele
+                morreu em 25 de junho de 2009, em Los Angeles, devido a uma parada cardíaca causada por overdose de
+                medicamentos, enquanto se preparava para uma turnê.
+            </P>
+            <div class="imgContentMain">
+                <img src="./img/michaelBiografia.jpg" alt="" width="300px">
+            </div>
         </section>
 
         <section class="contentMain">
-            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi beatae earum ut! Quibusdam nulla blanditiis porro, praesentium consequatur quidem ipsam ratione rerum tempore cum debitis optio at voluptates maiores nostrum.</P>
-        </section>
-
-        <section class="contentMain">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deserunt. Nobis, libero corrupti incidunt praesentium dolor consectetur ipsum, ullam omnis, totam sapiente tempore perferendis nihil recusandae vel quaerat delectus tenetur?</P>
-
+            <div class="containerDisc">
+                <div class="disc" onmouseover="playAudio(1)" onmouseout="pauseAudio(1)">
+                    <audio id="audio1" src="/music/thriller.mp3"></audio>
+                </div>
+                
+            <div class="disc" onmouseover="playAudio(2)" onmouseout="pauseAudio(2)">
+                <audio id="audio2" src="/music/billieJean.mp3"></audio>
+            </div>
+            
+            <div class="disc" onmouseover="playAudio(3)" onmouseout="pauseAudio(3)">
+                <audio id="audio3" src="/music/beatIt.mp3"></audio>
+            </div>
+            
+        </div>
         </section>
     </main>
 
@@ -90,6 +124,7 @@
         </div>
         </footer>
 
+         <script src="script.js"></script>
 </body>
 
 </html>
