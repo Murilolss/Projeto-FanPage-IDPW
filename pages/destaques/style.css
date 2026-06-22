@@ -258,12 +258,15 @@ svg:hover{
 
 .contentFooterptDown li{
     margin-bottom: 8px;
-    text-decoration: none; 
-    color: #fff;            
+    text-decoration: none;
+    white-space: nowrap;
+           
 }
 
 .contentFooterptDown a {
-    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    color: #C9A542;    
     text-decoration: none;
     transition: 0.3s;
     display: inline-block;
