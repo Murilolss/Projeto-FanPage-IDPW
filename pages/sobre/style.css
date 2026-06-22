@@ -43,12 +43,12 @@ header {
 .logoHeader {
     width: 90px;
     height: 90px;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.logoHeader:hover{
+.logoHeader:hover {
     cursor: pointer;
-    transform:translateX(10px);
+    transform: translateX(10px);
 }
 
 .containerHeader {
@@ -71,15 +71,16 @@ header {
     background-color: lightgray;
 }
 
-.nav-menu a{
+.nav-menu a {
     color: #C9A542;
     text-decoration: none;
-    transition:0.3s;
+    transition: 0.3s;
     display: inline-block;
 }
-.nav-menu a:hover{
+
+.nav-menu a:hover {
     cursor: pointer;
-    transform:translateX(3px);
+    transform: translateX(3px);
 }
 
 .containerHamburger {
@@ -89,7 +90,7 @@ header {
     font-size: 25px;
 }
 
-main{
+main {
     width: 100%;
     box-sizing: border-box;
     min-height: 300px;
@@ -97,27 +98,27 @@ main{
     display: flex;
     flex-direction: column;
     gap: 60px;
-    border-radius:10px;
-    transition:0.3s;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-p{
+p {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    color:#ccc;
+    color: #ccc;
 }
 
-h3{
+h3 {
     color: white;
 }
 
-.titleMain{
+.titleMain {
     width: 100%;
     margin-top: 20px;
     font-family: "Bebas Neue", sans-serif;
 }
 
-.containerTitleMain{
+.containerTitleMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,96 +127,128 @@ h3{
     color: white;
 }
 
-.line{
+.line {
     flex: 1;
     height: 2px;
     background-color: rgb(204, 204, 204);
 }
 
-.contentMain{
+.contentMain {
     min-height: 300px;
     padding: 20px;
-    border:4px solid #9C031F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contentContato {
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
-    border-radius:10px;
-    transition:0.3s;
+    justify-content: center;
+    gap: 25px;
 }
 
-.contentMain:hover{
-    transform:translateX(10px);
-    box-shadow:0 0 15px #9C031F;
-}
-
-.imgContentMain{
-    width: 350px;
-    height: 100%;
-}
-
-.avalicao {
-    list-style: none;
-    padding: 0;
-    flex: 1;
-}
-
-.avalicao li {
-    background-color: #1f1f1f;
+.contentContato svg {
+    width: 50px;
+    height: 50px;
     color: white;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-left: 5px solid #f5c518; /* Cor estilo IMDb */
-    border-radius: 8px;
-    font-size: 18px;
-    transition: transform 0.3s ease;
-    font-family: "Poppins", sans-serif;
 }
 
-.avalicao li:hover {
-    transform: translateX(10px);
-}
-
-.avalicao strong {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #f5c518;
-}
-
-.containerDisc {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-
-.cardDisc{
+.cardContato {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.disc {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #222 30%, #000 70%);
-  animation: spin 8s linear infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.3s;
-  background-image: url("/img/thrillerDisc.jpg");
+.formAvaliacao {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.disc:hover {
-  transform: scale(1.15);
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.contentAlbum{
-    text-align: center;
+.formGroup label {
+    font-family: "Poppins", sans-serif;
+    color: #C9A542;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup textarea {
+    background-color: #1f1f1f;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    resize: vertical;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="email"]:focus,
+.formGroup textarea:focus {
+    border-color: #C9A542;
+    box-shadow: 0 0 8px rgba(201, 165, 66, 0.4);
+}
+
+.estrelas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.estrelas input[type="radio"] {
+    display: none;
+}
+
+.estrelas label {
+    font-size: 32px;
+    color: #444;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.estrelas input[type="radio"]:checked~label,
+.estrelas label:hover,
+.estrelas label:hover~label {
+    color: #C9A542;
+}
+
+.btnEnviar {
+    background-color: #9C031F;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnEnviar:hover {
+    background-color: #C9A542;
+    color: #000;
+    transform: translateY(-3px);
 }
 
 .footer {
@@ -228,7 +261,7 @@ h3{
     background: black;
 }
 
-.contentFooter{
+.contentFooter {
     width: 280px;
     height: 130px;
     display: flex;
@@ -242,16 +275,17 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 25px;
 }
-svg{
+
+svg {
     width: 30px;
     height: 30px;
     color: white;
 }
 
-svg:hover{
+svg:hover {
     cursor: pointer;
     transform: translateY(-3px);
 }
@@ -261,23 +295,23 @@ svg:hover{
     width: auto;
     height: auto;
     display: flex;
-    justify-content: center;  
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-.contentFooterptDown ul{
+.contentFooterptDown ul {
     width: auto;
     display: flex;
     list-style: none;
     padding: 7px;
     margin: 0;
-    gap: 20px;  
+    gap: 20px;
 }
 
-.contentFooterptDown li{
+.contentFooterptDown li {
     margin-bottom: 8px;
-    text-decoration: none; 
-    color: #fff;            
+    text-decoration: none;
+    color: #fff;
 }
 
 .contentFooterptDown a {
@@ -291,7 +325,6 @@ svg:hover{
     cursor: pointer;
     transform: translateX(3px);
 }
-
 
 @media screen and (min-width: 768px) {
     .containerHamburger {
@@ -309,6 +342,11 @@ svg:hover{
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
