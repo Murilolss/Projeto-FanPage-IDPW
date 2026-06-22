@@ -47,6 +47,8 @@ header {
 }
 
 .nav-menu a{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
     color: #C9A542;
     text-decoration: none;
     transition:0.3s;
