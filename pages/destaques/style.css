@@ -262,6 +262,18 @@ svg:hover{
     color: #fff;            
 }
 
+.contentFooterptDown a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.contentFooterptDown a:hover {
+    cursor: pointer;
+    transform: translateX(3px);
+}
+
 @media screen and (min-width: 768px) {
     .containerHamburger {
         display: none;
