@@ -63,7 +63,7 @@ projeto
 │   │   ├── index.html
 │   │   └── style.css
 │   │
-│   ├── avalieosite
+│   ├── sobre
 │   │   ├── index.html
 │   │   └── style.css
 │   │
