@@ -31,13 +31,14 @@ body {
 }
 
 header {
-    height: 70px;
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    padding-left: 30px;
+    height: 120px;
+    background-color: #000;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 .logoHeader {
@@ -54,41 +55,103 @@ header {
 .containerHeader {
     display: flex;
     flex-flow: column nowrap;
+    align-items: flex-end;
 }
 
 .nav-menu {
-    font-family: "Poppins", sans-serif;
-    display: none;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    width: 200px;
+    background: #0a0a0a;
+    transform: translateX(100%);
+    transition: 0.35s cubic-bezier(.4, 0, .2, 1);
+    z-index: 99;
 }
 
 .nav-menu ul {
     list-style: none;
-    padding: 10px;
+    margin: 0;
+    padding: 16px 0;
 }
 
-.nav-menu.active {
-    display: block;
-    background-color: lightgray;
+.nav-menu li {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-menu li:last-child {
+    border: none;
+}
+
+.nav-menu.open {
+    transform: translateX(0);
 }
 
 .nav-menu a {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
     color: #C9A542;
     text-decoration: none;
-    transition: 0.3s;
-    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
 }
 
 .nav-menu a:hover {
-    cursor: pointer;
-    transform: translateX(3px);
+    background: #111;
+    padding-left: 28px;
+    color: #fff;
 }
 
 .containerHamburger {
-    cursor: pointer;
     background: none;
     border: none;
-    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
 }
+
+.containerHamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #C9A542;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.containerHamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.containerHamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.containerHamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 98;
+}
+
+.overlay.open {
+    height: 100vh;
+}
+
 
 main {
     width: 100%;
@@ -287,6 +350,13 @@ svg {
     color: white;
 }
 
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
 svg:hover {
     cursor: pointer;
     transform: translateY(-3px);
@@ -320,7 +390,7 @@ svg:hover {
 .contentFooterptDown a {
     font-family: "Bebas Neue", sans-serif;
     font-size: 18px;
-    color: #C9A542;   
+    color: #C9A542;
     text-decoration: none;
     transition: 0.3s;
     display: inline-block;
@@ -336,22 +406,53 @@ svg:hover {
         display: none;
     }
 
+    .overlay {
+        display: none;
+    }
+
     .nav-menu {
-        display: block;
+        position: static;
+        transform: none;
+        background: none;
+        border: none;
+        width: auto;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        gap: 10px;
+        padding: 0;
     }
 
     .nav-menu li {
-        display: inline;
-        padding-left: 10px;
+        border: none;
     }
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+    .contentMain {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-height: auto;
     }
 
-    to {
-        transform: rotate(360deg);
+    .contentMainAvaliacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .cardContato p {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+    }
+    
+    .contentContato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
     }
 }
