@@ -44,18 +44,34 @@ A proposta do projeto foi criar uma **Fan Page dedicada ao Michael Jackson**, re
 
 ## 🏗️ Estrutura do Projeto
 
-```
+## 🏗️ Estrutura do Projeto
+
+```text
 projeto
 │
 ├── index.html
 ├── index.css
 │
 ├── pages
-│   ├── biografia.html
-│   ├── destaques.html
-│   ├── influencia.html
-│   ├── avalieosite.html
-│   └── assistaaofilme.html
+│   ├── biografia
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   ├── destaques
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   ├── influencia
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   ├── avalieosite
+│   │   ├── index.html
+│   │   └── style.css
+│   │
+│   └── assistaaofilme
+│       ├── index.html
+│       └── style.css
 │
 ├── img
 │   └── imagens-do-site
