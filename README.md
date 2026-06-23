@@ -51,25 +51,11 @@ projeto
 ├── index.css
 │
 ├── pages
-│   ├── biografia
-│   │   ├── biografia.html
-│   │   └── style.css
-│   │
-│   ├── destaques
-│   │   ├── destaques.html
-│   │   └── style.css
-│   │
-│   ├── influencia
-│   │   ├── influencia.html
-│   │   └── style.css
-│   │
-│   ├── avalieosite
-│   │   ├── avalieosite.html
-│   │   └── style.css
-│   │
-│   └── assistaaofilme
-│       ├── assistaaofilme.html
-│       └── style.css
+│   ├── biografia.html
+│   ├── destaques.html
+│   ├── influencia.html
+│   ├── avalieosite.html
+│   └── assistaaofilme.html
 │
 ├── img
 │   └── imagens-do-site
