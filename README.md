@@ -44,8 +44,6 @@ A proposta do projeto foi criar uma **Fan Page dedicada ao Michael Jackson**, re
 
 ## 🏗️ Estrutura do Projeto
 
-## 🏗️ Estrutura do Projeto
-
 ```text
 projeto
 │
@@ -123,5 +121,7 @@ Esta página foi desenvolvida com o objetivo de apresentar sua história para f�
 
 - Murilo Leandro dos Santos Silva
 - Liliane Perim Vigetta
+
+## 📄 Licença
 
 Projeto acadêmico desenvolvido para a disciplina de **Introdução ao Desenvolvimento de Páginas Web (IDPW)**.
