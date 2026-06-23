@@ -87,9 +87,9 @@ header {
     transform: translateX(0);
 }
 
-.nav-menu a {
+.nav-menu a{
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 14px 20px;
     color: #C9A542;
     text-decoration: none;
